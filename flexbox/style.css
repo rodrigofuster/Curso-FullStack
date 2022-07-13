@@ -8,11 +8,17 @@
     background: darkgray;
     min-height: 100vh;
     display: flex;
-    flex-direction: flex;
-    gap: 0px 10px;
-    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
     border: 2px solid black;
