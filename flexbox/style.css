@@ -7,6 +7,10 @@
 .container {
     background: darkgray;
     min-height: 100vh;
+    display: flex;
+    flex-direction: flex;
+    gap: 0px 10px;
+    justify-content: space-evenly;
 }
 .item {
     width: 200px;
