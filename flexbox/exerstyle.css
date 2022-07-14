@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.rock {
+    width: 40px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    flex-wrap: wrap;
+}
+
+.bnt {
+    display: flex;
+    gap: 10px;
+}
+
+.bnt-header {
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    flex-wrap: wrap;
+}
+
+.bnt-header:hover {
+    border-color: red;
+    color: red;
+}
+
+@media (max-width:320px) {
+    .bnt-header {
+        margin-top: 15px;
+        font-size:10px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background: transparent;
+        border-color: white;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+        flex-wrap: wrap;
+    }
+}
