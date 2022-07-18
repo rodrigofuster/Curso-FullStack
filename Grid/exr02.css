@@ -11,7 +11,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    
     
 }
 
@@ -23,10 +23,12 @@
     border: 2px solid black;
     height: 60px;
     width: 100%;
+    cursor: pointer;
     
 }
 
 .main-content {
+    background-color: darkgray;
     flex: 1 0 auto;
     padding: 10px;
     min-height: 80vh;
@@ -38,9 +40,11 @@
     "item1 item2 item3"
     "item4 item4 item4"
     "item5 item5 item6";
+    
 }
 
 .item {
+    cursor: pointer;
     background: #fff;
     border: 2px solid black;
     display: grid;
@@ -50,14 +54,17 @@
 
 .item1 {
     grid-area: item1;
+    min-width: 250px;
 }
 
 .item2 {
     grid-area: item2;
+    min-width: 250px;
 }
 
 .item3 {
     grid-area: item3;
+    min-width: 250px;
 }
 
 .item4 {
@@ -66,10 +73,12 @@
 
 .item5 {
     grid-area: item5;
+    min-width: 350px;
 }
 
 .item6 {
     grid-area: item6;
+    min-width: 250px;
 }
 
 .footer {
@@ -80,4 +89,53 @@
     border: 2px solid black;
     height: 60px;
     width: 100%;
+    cursor: pointer;
 }
+
+.footer:hover {
+    transition: 10ms;
+    background: blue;
+    color: white;
+}
+
+.header:hover {
+    transition: 10ms;
+    background: blue;
+    color: white;
+}
+
+.item:hover {
+    transition: 10ms;
+    background: blue;
+    color: white;
+}
+
+@media(max-width: 780px) {
+    .main-content{
+        grid-template-areas: 
+        "item1 item1 item1"
+        "item2 item2 item2"
+        "item3 item3 item3"
+        "item4 item4 item4"
+        "item5 item5 item6";
+    }
+}
+
+@media(max-width: 630px) {
+    .main-content{
+        grid-template-areas: 
+        "item1 item1 item1"
+        "item2 item2 item2"
+        "item3 item3 item3"
+        "item4 item4 item4"
+        "item5 item5 item5"
+        "item6 item6 item6";
+    }
+}
+
+@media(max-width: 360px) {
+    .item5 {
+        min-width: auto;
+    }
+}
+
